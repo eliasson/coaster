@@ -1,0 +1,33 @@
+html,
+body {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    background-color: $white;
+    color: $default-text-color;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 2.25rem;
+    margin-bottom: 2.5rem;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $link-hover-color;
+    }
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+}

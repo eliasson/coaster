@@ -1,0 +1,123 @@
+.navigation {
+    height: 4.5em;
+}
+
+.navigation-btn {
+    background: $white url('/images/burger.png') no-repeat 50% 50%;
+    border: 2px solid #D0D0D0;
+    border-radius: 50%;
+    color: $default-text-color;
+    display: block;
+    font-size: 1.25em;
+    font-weight: 400;
+    height: 2.5em;
+    line-height: 2;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0.5em;
+    right: 0.5em;
+    width: 2.5em;
+    z-index: 220;
+    outline: none;
+}
+
+.navigation-list {
+    left: -9999px;
+    position: absolute;
+
+    &.open {
+        background-color: $white;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding-top: 3.5em;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 210;
+    }
+}
+
+.navigation-link {
+    color: $default-text-color;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 0.5em 0.75em;
+    text-align: center;
+
+    &:hover {
+        background-color: $nav-hover-bg;
+        border-radius: 3px;
+        color: $nav-hover-text;
+    }
+
+    &.is-active {
+        color: $nav-active-text;
+
+        &:hover {
+            background: none;
+        }
+    }
+}
+
+.start-page .start-page-link,
+.about .about-link,
+.resume .resume-link,
+.blog .blog-link {
+    color: $nav-active-text;
+    &:hover {
+        background: none;
+    }
+}
+
+@include respond-to(760) {
+    .navigation {
+        height: auto;
+        margin: 1em 0 3em 0;
+    }
+
+    .navigation-btn {
+        left: -9999px;
+    }
+
+    .navigation-list {
+        left: 0;
+        position: relative;
+    }
+
+    .navigation-item {
+        display: inline-block;
+        width: auto;
+    }
+
+    .navigation-link {
+        padding: 0.5em 1.5em;
+    }
+}
+
+
+@include respond-to(990) {
+    .navigation {
+        margin: 2em 0 3em 0;
+        text-align: center;
+    }
+}
+
+@include respond-to(1240) {
+    .navigation {
+        margin: 0 5em 3em 0;
+        float: right;
+        .start-page & {
+            float: none;;
+            margin: 0 0 3em 0;
+        }
+    }
+}
+
+@include respond-to(1600) {
+    .navigation {
+        margin-right: 0;
+    }
+}

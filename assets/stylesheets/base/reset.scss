@@ -1,0 +1,17 @@
+html, body, div
+article, section, header, footer, time, aside
+form, fieldset,
+ul, li, p,
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+article, section, header, footer, aside {
+    display: block;
+}
+
+a img,
+fieldset {
+    border: 0;
+}

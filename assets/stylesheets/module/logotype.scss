@@ -1,0 +1,29 @@
+.logotype {
+    display: block;
+}
+
+.logotype-link {
+    display: inline-block;
+}
+
+@include respond-to(480) {
+    
+}
+
+@include respond-to(760) {
+    
+}
+
+@include respond-to(990) {
+    
+}
+
+@include respond-to(1240) {
+
+    
+}
+
+@include respond-to(1400) {
+
+    
+}

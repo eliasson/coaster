@@ -1,0 +1,46 @@
+.page {
+    padding-top: 2em;
+}
+
+.site-header {
+    background: url('/img/stripe.png') repeat-x 0 50%;
+    margin-bottom: 2em;
+    text-align: center;
+    @include pad(0 1em);
+    
+
+    @include respond-to(760) {
+        
+    }
+
+    @include respond-to(990) {
+        
+    }
+
+    @include respond-to(1240) {
+
+    }
+
+    @include respond-to(1400) {
+        
+    }
+}
+
+.site-content {
+    @include outer-container(90em);
+    @include pad(0 1em);
+
+    @include respond-to(760) {
+        @include pad(0 2em);
+    }
+
+    @include respond-to(990) {
+        @include pad(0 3em);
+    }
+}
+
+.site-footer {
+    margin-bottom: 3em;
+    @include outer-container(90em);
+    @include pad(1em);
+}

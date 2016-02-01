@@ -1,0 +1,62 @@
+.container {
+    @include outer-container();
+}
+
+.row {
+    @include row();
+}
+
+@mixin make-col($spans) {
+    @include span-columns(12);
+    @include respond-to(760) {
+        @include span-columns($spans);
+    }
+}
+
+.c1 {
+    @include make-col(1);
+}
+
+.c2 {
+    @include make-col(2);
+}
+
+.c3 {
+    @include make-col(3);
+}
+
+.c4 {
+    @include make-col(4);
+}
+
+.c5 {
+    @include make-col(5);
+}
+
+.c6 {
+    @include make-col(6);
+}
+
+.c7 {
+    @include make-col(7);
+}
+
+.c8 {
+    @include make-col(8);
+}
+
+.c9 {
+    @include make-col(9);
+}
+
+.c10 {
+    @include make-col(10);
+}
+
+.c11 {
+    @include make-col(11);
+}
+
+.c12 {
+    @include span-columns(12);
+}
