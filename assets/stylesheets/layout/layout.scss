@@ -27,7 +27,7 @@
 }
 
 .site-content {
-    @include outer-container(90em);
+    @include outer-container(60em);
     @include pad(0 1em);
 
     @include respond-to(760) {
