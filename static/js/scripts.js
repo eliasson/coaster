@@ -6,7 +6,8 @@
     'use strict';
 
     var key = '28059370332';
-    var url = 'http://188.226.255.60/api/gb.php?key=' + key;
+    var schema = window.location.href.split('/')[0];
+    var url = schema + '//188.226.255.60/api/gb.php?key=' + key;
 
     nanoajax.ajax({url: url}, function (code, responseText) {
         if (code === 200) {
